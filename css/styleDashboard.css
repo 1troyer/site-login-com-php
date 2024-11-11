@@ -9,10 +9,6 @@ body {
     margin: 0;
 }
 
-.dark-mode {
-    background-color: rgb(33, 33, 33);
-    color: whitesmoke;
-}
 
 nav {
     display: flex;
@@ -21,10 +17,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-}
-
-.dark-mode nav {
-    background-color: #444;
 }
 
 a {
@@ -41,7 +33,7 @@ a {
     margin-left: 32px;
 }
 
-.butDarkmode {
+.butProcurar {
     width: 200px;
     height: 30px;
     color: black;
@@ -51,14 +43,10 @@ a {
     cursor: pointer;
 }
 
-.dark-mode .butDarkmode {
-    color: white;
-    background-color: black;
-    border: 2px solid whitesmoke;
-}
 
 h1{
     text-align: center;
+    
 }
 
 .news-section {
@@ -69,25 +57,42 @@ h1{
 }
 
 .nyt-news {
-    margin-top: 20px;
+    max-width: 600px;
+    margin: 20px auto;
     border-top: 1px solid #ccc;
     padding-top: 20px;
+    text-align: center;
+    background-color: rgb(81, 47, 2);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.nyt-news h2{
+    text-shadow: 2px 2px 0 black ;
+    color: white;
+    font-size: 30px;
 }
 .news-content {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 .news-image {
-    width: 150px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
-    margin-right: 15px;
     border-radius: 5px;
+    margin-bottom: 15px;
+    border: 3px solid black;
 }
-.news-text h3 {
+.news-content h3 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: #333;
 }
-.news-text p {
-    margin-top: 5px;
-    color: #555;
+.news-content p {
+    margin-top: 10px;
+    color: #e3e0e0;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 0 black ;
+    
 }
