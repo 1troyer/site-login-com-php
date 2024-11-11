@@ -1,14 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     background-color: antiquewhite;
     color: black;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
+    padding: 0;
+    margin: 0;
 }
 
 .dark-mode {
@@ -59,43 +57,37 @@ a {
     border: 2px solid whitesmoke;
 }
 
-#caixa_login{
-    background-color: #110909;
-    color: white;
-    position: absolute;
+h1{
     text-align: center;
-    top:30%;
-    left: 36%;
-    translate: (-50%, 50%);
-    padding:60px 80px ;
-    border-radius:10px ;
 }
-#caixa_login input{
-    padding: 10px 27px;
-    text-align: center;
-    border-radius: 5px  ;
+
+.news-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
 }
-#caixa_login button{
+
+.nyt-news {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+.news-content {
+    display: flex;
+    align-items: flex-start;
+}
+.news-image {
     width: 150px;
-    height: 30px;
-    border-radius: 5px;background-color: ;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
 }
-#caixa_login button:hover{
-    background-color: rgb(64, 29, 1);
-    color: white;
-    transition: 0.5s;
+.news-text h3 {
+    margin: 0;
+    font-size: 1.2em;
 }
-#caixa_registro{
-    background-color: #110909;
-    color: white;
-    position: absolute;
-    text-align: center;
-    top:30%;
-    left: 36%;
-    translate: (-50%, 50%);
-    padding:60px 80px ;
-    border-radius:10px ;
-}
-#bemV{
-    font-size: 50px;
+.news-text p {
+    margin-top: 5px;
+    color: #555;
 }
